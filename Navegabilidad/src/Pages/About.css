@@ -1,0 +1,125 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87); /* Color principal */
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #00bfff; /* Cambiado a un azul brillante */
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #1e90ff; /* Un tono más oscuro en hover */
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #242424; /* Fondo oscuro */
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    color: #ffa500; /* Cambiado a un naranja vibrante */
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    color: #ffffff; /* Letras blancas en el botón */
+    cursor: pointer;
+    transition: border-color 0.25s, background-color 0.25s;
+  }
+  button:hover {
+    border-color: #00bfff; /* Azul brillante en hover */
+    background-color: #333333; /* Fondo más claro en hover */
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+      color: #000000; /* Negro en modo claro */
+    }
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  .App h1 {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #ff4500; /* Un rojo anaranjado para destacar */
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    overflow: hidden;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333333; /* Texto principal en gris oscuro */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #1e90ff; /* Azul destacado para el título */
+  }
+  
+  .card-content p {
+    color: #555555; /* Texto en gris medio */
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

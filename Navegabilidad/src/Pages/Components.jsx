@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../Pages/Components.css'
+import Boton from '../Components/Boton.jsx';
+import Dividers from '../Components/Dividers.jsx';
+import Acordeon from '../Components/Acordeon.jsx';
+import Verde from '../Components/Verde.jsx';
+
 
 const Components = () => {
     return (
-        <div className="container mt-5">
-            <h2>Lista de Componentes</h2>
-            <ul className="list-group">
-                <li className="list-group-item">Componente 1</li>
-                <li className="list-group-item">Componente 2</li>
-                <li className="list-group-item">Componente 3</li>
-            </ul>
-        </div>
+        <>
+        <h1>20 Components </h1>
+       <Boton/>
+       <br/>
+       <Dividers/>
+       <br/>
+       <Acordeon/>
+       <br/>
+       <Verde/>
+       <br/>
+        </>
+        
     );
 };
 
